@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.main">
+            <block name="product.custom.attributes" class="Magento\Catalog\Block\Product\View" template="Magento_Catalog::product/view/custom-attribute.phtml" after="product.info.social">
+                <arguments>
+                    <argument name="at_call" xsi:type="string">getDemoLink</argument>
+                    <argument name="at_code" xsi:type="string">customAttribute</argument>
+                    <argument name="css_class" xsi:type="string">customAttribute</argument>
+                    <argument name="at_label" xsi:type="string">Custom Attribute</argument>
+                    <argument name="add_attribute" xsi:type="string">itemprop="customAttribute"</argument>
+                </arguments>
+            </block>
+
+        </referenceContainer>
+    </body>
+</page>
